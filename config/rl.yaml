@@ -1,0 +1,27 @@
+serverid: as138
+ws_thread_num: 1
+
+storage:
+  enable: True
+  path: /home/jeriffli/ngai_data
+  remote: s138:ngai/ngai_data
+
+limits:
+  min_acct_level: -1
+  max_connections: 100
+  max_concurrent_saving_files: 20
+
+depthmap_config: config/depth_map_config_train.yaml
+
+prometheus_client:
+  enable: False
+
+model:
+  enable: False
+  post_policy_no: 0
+  path: resource/output/ckpt
+  version: ckpt-1300
+
+schedule:
+  #ms to wait between two batch when not full
+  bus_gap: 1

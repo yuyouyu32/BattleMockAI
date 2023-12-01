@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+*.log
+*.gif
+*.png
+*.sbe
+*.mp4
+*.tfrecord
+*.avi
+*.pickle
+*__pycache__/
+raw_data
+data
+output_sl

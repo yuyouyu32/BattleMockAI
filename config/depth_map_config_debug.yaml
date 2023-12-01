@@ -1,0 +1,128 @@
+###################
+# MAP 01  ID 0
+# MAP 02  ID 1
+##################
+
+
+map_num:        2
+
+# depth map param
+
+depth_map_w:
+    # must same
+    - 160 # w
+    - 160 # w
+
+depth_map_h:        
+    # must same
+    - 90 # h
+    - 90 # h
+
+depth_map_dis:      
+    - 6000
+    - 6000
+
+fov_h:              
+    - 96 # fh
+    - 96 # fh
+fov_v:              
+    - 54 # fv
+    - 54 # fv
+
+sample_step:
+    - 50
+    - 50
+
+# data file param
+
+grid_mesh_data_file:
+    - "./resource/Hunt_Map_02_13_4.dat"
+    - "./resource/grid_mesh_death_match.dat"
+
+grid_mesh_data_size_byte:
+    # 510 * 510 * 8
+    - 2080800
+    - 6400 
+
+triangle_data_file:
+    - "./resource/redundant_triangle_data_02_13_4.dat"
+    - "./resource/redundant_triangle_data_death_match.dat"
+
+# not use now, see meminfo
+triangle_data_size_byte:
+    - 713533680
+    - 791935092
+
+
+# resource map param
+
+min_x:
+    - -127500 
+    - -5000
+min_y:      
+    - -127500
+    - -10000
+min_z:      
+    - -500
+    - 0
+
+x_size:
+    - 255000
+    - 10000
+y_size:      
+    - 255000
+    - 20000
+z_size:      
+    - 12000
+    - 2000
+
+grid_size:
+    - 500
+    - 500
+
+grid_num_x:
+    - 510
+    - 20
+
+grid_num_y:
+    - 510
+    - 40
+
+######################## gen grid mesh ########################
+
+# 0 for map 1, 1 for map 2
+grid_mesh_map_id: 
+    - 1
+    - 1
+
+raw_map_mesh_file:
+    - "./resource/raw_mesh_map_obj/Hunt_Map_02_13_4.obj"
+    - "./resource/raw_mesh_map_obj/TeamDeathMatch_01.obj"
+
+overlap_size:
+    - 150
+    - 150
+
+######################## gen mpg ########################
+
+# 0 for map 1, 1 for map 2
+mpg_map_id: 
+    - 1
+    - 1
+
+mpg_csv_file:
+    - "./resource/0/building_mpg.csv"
+    - "./resource/1/building_mpg.csv"
+
+# 站立点步长
+column_size:
+    - 30
+    - 30
+# 站立点x 方向划分
+column_num_x:
+    - 8500
+    - 333
+# 站立点y 方向划分
+column_num_y:
+    - 8500
+    - 666
